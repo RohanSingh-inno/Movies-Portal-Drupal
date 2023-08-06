@@ -1,0 +1,306 @@
+uuid: e6242dcf-df9f-47c8-8705-ac863810d914
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.review.default
+    - core.entity_view_mode.node.new_view_mode
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_link_2
+    - field.field.node.movie.field_link_3
+    - field.field.node.movie.field_link_4
+    - field.field.node.movie.field_links
+    - field.field.node.movie.field_movie_poster
+    - field.field.node.movie.field_plot
+    - field.field.node.movie.field_release_date_
+    - field.field.node.movie.field_review
+    - node.type.movie
+  module:
+    - comment
+    - datetime
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          4e865d50-cf50-4dd8-946e-318ccdf6b384:
+            uuid: 4e865d50-cf50-4dd8-946e-318ccdf6b384
+            region: content
+            configuration:
+              id: 'field_block:node:movie:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          84f7c464-182d-4966-984a-039610581780:
+            uuid: 84f7c464-182d-4966-984a-039610581780
+            region: first
+            configuration:
+              id: 'field_block:node:movie:field_movie_poster'
+              label: 'Movie Poster'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: custome2_130_100_
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          87553936-156b-4f0f-a9e3-95292c2fc27e:
+            uuid: 87553936-156b-4f0f-a9e3-95292c2fc27e
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_plot'
+              label: Plot
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_fourcol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          b74c3a7a-1ffd-40d8-836a-2926246dfbd8:
+            uuid: b74c3a7a-1ffd-40d8-836a-2926246dfbd8
+            region: first
+            configuration:
+              id: 'field_block:node:movie:field_links'
+              label: Link-1
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7f878ac4-23af-41da-90ba-6f95f734ac45:
+            uuid: 7f878ac4-23af-41da-90ba-6f95f734ac45
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_link_2'
+              label: Link-2
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          06415db7-cf16-43e1-acc9-ebf95b3fa5ff:
+            uuid: 06415db7-cf16-43e1-acc9-ebf95b3fa5ff
+            region: third
+            configuration:
+              id: 'field_block:node:movie:field_link_3'
+              label: Link-3
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          04652d71-8cbd-49ae-825d-927a22e16c24:
+            uuid: 04652d71-8cbd-49ae-825d-927a22e16c24
+            region: fourth
+            configuration:
+              id: 'field_block:node:movie:field_link_4'
+              label: Link-4
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.movie.new_view_mode
+targetEntityType: node
+bundle: movie
+mode: new_view_mode
+content:
+  field_genre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_link_2:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_link_3:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_link_4:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_movie_poster:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_plot:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_release_date_:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_review:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

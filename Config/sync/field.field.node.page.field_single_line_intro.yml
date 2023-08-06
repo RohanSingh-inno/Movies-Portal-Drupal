@@ -1,0 +1,19 @@
+uuid: 8a01242b-af89-449d-881d-ba9b99b3b438
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_single_line_intro
+    - node.type.page
+id: node.page.field_single_line_intro
+field_name: field_single_line_intro
+entity_type: node
+bundle: page
+label: 'Single Line Intro'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

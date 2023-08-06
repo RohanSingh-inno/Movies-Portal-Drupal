@@ -1,0 +1,14 @@
+uuid: 6d42d187-f773-40a1-abd4-168f2a02b141
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.movies_manager
+  module:
+    - user
+id: user_remove_role_action.movies_manager
+label: 'Remove the Movies Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: movies_manager

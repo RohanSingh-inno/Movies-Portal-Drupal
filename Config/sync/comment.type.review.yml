@@ -1,0 +1,8 @@
+uuid: d8e00585-3aa1-464b-8203-54c22fd4a29f
+langcode: en
+status: true
+dependencies: {  }
+id: review
+label: Review
+target_entity_type_id: node
+description: 'It will store the reviews'

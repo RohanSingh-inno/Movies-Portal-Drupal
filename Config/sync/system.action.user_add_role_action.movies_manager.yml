@@ -1,0 +1,14 @@
+uuid: ecf9fb10-b85e-474b-8d12-c3aee09b6753
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.movies_manager
+  module:
+    - user
+id: user_add_role_action.movies_manager
+label: 'Add the Movies Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: movies_manager

@@ -1,0 +1,33 @@
+uuid: 93997cd0-c570-47ed-87f8-0db847b7579a
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tool-2
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap
+id: tool2
+theme: bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:tool-2'
+settings:
+  id: 'system_menu_block:tool-2'
+  label: 'News Section'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      news_manager: news_manager

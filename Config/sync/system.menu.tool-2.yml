@@ -1,0 +1,8 @@
+uuid: 0a5eb174-a045-4b8a-a785-0a3e149e9a8e
+langcode: en
+status: true
+dependencies: {  }
+id: tool-2
+label: Tool-2
+description: 'this will only appear to news manager'
+locked: false
