@@ -1,0 +1,25 @@
+uuid: d77529be-fab4-40bc-be98-6ee41fe72d2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - bootstrap
+id: quicktabshome_news
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'quicktabs_block:home_news'
+settings:
+  id: 'quicktabs_block:home_news'
+  label: 'QuickTabs - Home_News'
+  label_display: '0'
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

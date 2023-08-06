@@ -1,0 +1,28 @@
+uuid: 6581db3d-daff-4af2-bcfc-13eb1000254f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.list
+    - node.type.movie
+  module:
+    - comment
+    - node
+    - system
+    - toolbar
+    - tour
+id: movies_manager
+label: 'Movies Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'create movie content'
+  - 'delete own list content'
+  - 'delete own movie content'
+  - 'edit own comments'
+  - 'edit own movie content'
+  - 'view the administration theme'

@@ -1,0 +1,15 @@
+uuid: 3d8d15df-641a-4cdf-9d51-a69a5c6ef72a
+langcode: en
+status: true
+dependencies: {  }
+name: custom
+label: Custom1(300×200)
+effects:
+  60c43ffc-ed5f-458b-89eb-e04646aa5cdd:
+    uuid: 60c43ffc-ed5f-458b-89eb-e04646aa5cdd
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      upscale: true

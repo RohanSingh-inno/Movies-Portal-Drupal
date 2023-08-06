@@ -1,0 +1,15 @@
+uuid: dabca2d1-bda1-4014-a0e2-47a4a0bfcc3c
+langcode: en
+status: true
+dependencies: {  }
+name: custome2_130_100_
+label: Custome2(130×100)
+effects:
+  28fea7e7-a08d-4c33-95b5-5955bcdc22f9:
+    uuid: 28fea7e7-a08d-4c33-95b5-5955bcdc22f9
+    id: image_scale
+    weight: 1
+    data:
+      width: 130
+      height: 100
+      upscale: true

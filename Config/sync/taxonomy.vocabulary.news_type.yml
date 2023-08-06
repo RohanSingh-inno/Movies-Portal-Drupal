@@ -1,0 +1,8 @@
+uuid: 08200779-a762-4a4d-8cfa-cc6b095de54b
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Type'
+vid: news_type
+description: 'Will be used to segregate different types of news.'
+weight: 0

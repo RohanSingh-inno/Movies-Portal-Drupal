@@ -1,0 +1,23 @@
+uuid: e0870358-838c-4b34-a15f-3c7ebe7d2454
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_3
+    - node.type.movie
+  module:
+    - link
+id: node.movie.field_link_3
+field_name: field_link_3
+entity_type: node
+bundle: movie
+label: Link-3
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

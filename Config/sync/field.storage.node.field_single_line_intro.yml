@@ -1,0 +1,21 @@
+uuid: 47e55008-6b53-4329-b822-5c249a0742e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_single_line_intro
+field_name: field_single_line_intro
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
